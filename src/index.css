@@ -135,3 +135,18 @@ code {
         border-bottom-color: inherit;
     }
 }
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+  }
+  
+  @page {
+    margin: 1cm;
+  }
+}

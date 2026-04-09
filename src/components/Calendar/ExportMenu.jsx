@@ -3,25 +3,27 @@ import { Download, Printer } from 'lucide-react';
 
 export const ExportMenu = ({ onExportJSON, onPrint }) => {
   return (
-    <div className="flex gap-2" data-testid="export-menu">
+    <div className="flex gap-1.5" data-testid="export-menu">
       <button
         onClick={onExportJSON}
         data-testid="export-json-btn"
-        className="flex items-center gap-2 px-3 py-2 text-sm bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors"
+        className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium glass text-slate-600 dark:text-slate-300 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-700/50 transition-all active:scale-95 shadow-sm"
         title="Export calendar data"
+        style={{ fontFamily: 'Outfit, sans-serif' }}
       >
-        <Download className="w-4 h-4" strokeWidth={2} />
-        <span className="hidden sm:inline" style={{ fontFamily: 'Manrope, sans-serif' }}>Export</span>
+        <Download className="w-3.5 h-3.5" strokeWidth={2} />
+        <span className="hidden sm:inline">Export</span>
       </button>
-      
+
       <button
         onClick={onPrint}
         data-testid="print-btn"
-        className="flex items-center gap-2 px-3 py-2 text-sm bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors"
+        className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium glass text-slate-600 dark:text-slate-300 rounded-xl hover:bg-slate-100/80 dark:hover:bg-slate-700/50 transition-all active:scale-95 shadow-sm"
         title="Print calendar"
+        style={{ fontFamily: 'Outfit, sans-serif' }}
       >
-        <Printer className="w-4 h-4" strokeWidth={2} />
-        <span className="hidden sm:inline" style={{ fontFamily: 'Manrope, sans-serif' }}>Print</span>
+        <Printer className="w-3.5 h-3.5" strokeWidth={2} />
+        <span className="hidden sm:inline">Print</span>
       </button>
     </div>
   );

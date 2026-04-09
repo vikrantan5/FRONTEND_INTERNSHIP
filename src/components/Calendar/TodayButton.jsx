@@ -6,12 +6,13 @@ export const TodayButton = ({ onClick }) => {
     <button
       onClick={onClick}
       data-testid="today-btn"
-      className="flex items-center gap-2 px-4 py-2 bg-[#0EA5E9] text-white rounded-lg hover:bg-[#0284C7] transition-colors shadow-md"
+      className="flex items-center gap-1.5 px-3 py-1.5 bg-sky-500 text-white rounded-xl hover:bg-sky-600 transition-all active:scale-95 shadow-md shadow-sky-500/20 text-sm font-semibold"
+      style={{ fontFamily: 'Outfit, sans-serif' }}
     >
-      <Calendar className="w-4 h-4" strokeWidth={2} />
-      <span className="text-sm font-medium" style={{ fontFamily: 'Manrope, sans-serif' }}>Today</span>
+      <Calendar className="w-3.5 h-3.5" strokeWidth={2.5} />
+      Today
     </button>
   );
 };
 
-export default TodayButton; 
+export default TodayButton;

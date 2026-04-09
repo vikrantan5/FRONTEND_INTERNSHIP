@@ -6,13 +6,13 @@ export const ThemeToggle = ({ isDark, onToggle }) => {
     <button
       onClick={onToggle}
       data-testid="theme-toggle-btn"
-      className="fixed top-4 right-4 z-50 p-3 rounded-full bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 shadow-lg hover:shadow-xl transition-all hover:scale-110"
+      className="fixed top-3 right-3 z-50 p-2.5 rounded-xl glass shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
       aria-label="Toggle theme"
     >
       {isDark ? (
-        <Sun className="w-5 h-5 text-yellow-500" strokeWidth={2} />
+        <Sun className="w-4 h-4 text-amber-400" strokeWidth={2.5} />
       ) : (
-        <Moon className="w-5 h-5 text-slate-700" strokeWidth={2} />
+        <Moon className="w-4 h-4 text-slate-600" strokeWidth={2.5} />
       )}
     </button>
   );
